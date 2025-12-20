@@ -1,0 +1,6 @@
+default via 10.129.15.254 dev wlp4s0 proto dhcp src 10.129.0.214 metric 600 
+10.129.0.0/20 dev wlp4s0 proto kernel scope link src 10.129.0.214 metric 600 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+172.18.0.0/16 dev br-6497fc1f2cab proto kernel scope link src 172.18.0.1 linkdown 
+172.19.0.0/16 dev br-2528b14de027 proto kernel scope link src 172.19.0.1 linkdown 
+192.168.195.0/24 dev zt5bh35ta2 proto kernel scope link src 192.168.195.102 

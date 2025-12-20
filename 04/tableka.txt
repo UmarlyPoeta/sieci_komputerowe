@@ -1,0 +1,9 @@
+desktop - server http lan
+ip 192.168.102.142
+maska 24
+
+
+hp thinclient wan
+hostname HP001CC4E7709
+ip
+maska 24

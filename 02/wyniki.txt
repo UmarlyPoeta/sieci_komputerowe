@@ -1,0 +1,720 @@
+1. speedtest.milkywan.fr
+2. nl.iperf.014.fr
+3. iperf3.moji.fr
+
+1. TCP
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10166]
+└─[$] iperf3 -p 9240 -c speedtest.milkywan.fr -t 15                                                             [13:48:34]
+Connecting to host speedtest.milkywan.fr, port 9240
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 53588 connected to 2a0b:cbc0:42:1::1 port 9240
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  11.6 MBytes  97.5 Mbits/sec  763    572 KBytes
+[  5]   1.00-2.00   sec  8.38 MBytes  70.3 Mbits/sec    8    450 KBytes
+[  5]   2.00-3.00   sec  8.12 MBytes  68.2 Mbits/sec    1    342 KBytes
+[  5]   3.00-4.00   sec  6.88 MBytes  57.7 Mbits/sec    0    371 KBytes
+[  5]   4.00-5.00   sec  8.12 MBytes  68.1 Mbits/sec    1    274 KBytes
+[  5]   5.00-6.00   sec  6.75 MBytes  56.7 Mbits/sec    0    303 KBytes
+[  5]   6.00-7.00   sec  5.38 MBytes  45.1 Mbits/sec    0    318 KBytes
+[  5]   7.00-8.00   sec  6.75 MBytes  56.6 Mbits/sec    0    326 KBytes
+[  5]   8.00-9.00   sec  6.88 MBytes  57.7 Mbits/sec    0    331 KBytes
+[  5]   9.00-10.00  sec  6.75 MBytes  56.6 Mbits/sec    0    347 KBytes
+[  5]  10.00-11.00  sec  8.12 MBytes  68.1 Mbits/sec    0    362 KBytes
+[  5]  11.00-12.00  sec  6.75 MBytes  56.6 Mbits/sec    0    377 KBytes
+[  5]  12.00-13.00  sec  8.12 MBytes  68.2 Mbits/sec    0    391 KBytes
+[  5]  13.00-14.00  sec  8.12 MBytes  68.2 Mbits/sec    0    406 KBytes
+[  5]  14.00-15.00  sec  9.38 MBytes  78.5 Mbits/sec    0    422 KBytes
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec   116 MBytes  64.9 Mbits/sec  773            sender
+[  5]   0.00-15.05  sec   113 MBytes  62.8 Mbits/sec                  receiver
+
+iperf Done.
+
+─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10170]
+└─[$] iperf3 -p 10415 -c nl.iperf.014.fr -t 15                                                                  [13:51:59]
+Connecting to host nl.iperf.014.fr, port 10415
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 56118 connected to 2a04:ecc0:8:a8:4567:7f5b:0:1 port 10415
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  9.75 MBytes  81.7 Mbits/sec    0   1.20 MBytes
+[  5]   1.00-2.00   sec  10.2 MBytes  86.0 Mbits/sec  366    461 KBytes
+[  5]   2.00-3.00   sec  8.25 MBytes  69.2 Mbits/sec    0    496 KBytes
+[  5]   3.00-4.00   sec  8.25 MBytes  69.2 Mbits/sec    0    516 KBytes
+[  5]   4.00-5.00   sec  9.62 MBytes  80.7 Mbits/sec    0    526 KBytes
+[  5]   5.00-6.00   sec  9.62 MBytes  80.7 Mbits/sec    0    530 KBytes
+[  5]   6.00-7.00   sec  8.50 MBytes  71.3 Mbits/sec    0    530 KBytes
+[  5]   7.00-8.00   sec  9.62 MBytes  80.7 Mbits/sec    0    530 KBytes
+[  5]   8.00-9.00   sec  9.62 MBytes  80.8 Mbits/sec    0    534 KBytes
+[  5]   9.00-10.00  sec  10.9 MBytes  91.2 Mbits/sec    0    546 KBytes
+[  5]  10.00-11.00  sec  9.38 MBytes  78.6 Mbits/sec    0    564 KBytes
+[  5]  11.00-12.00  sec  10.9 MBytes  91.2 Mbits/sec    0    594 KBytes
+[  5]  12.00-13.00  sec  10.0 MBytes  83.9 Mbits/sec    0    641 KBytes
+[  5]  13.00-14.00  sec  11.1 MBytes  93.3 Mbits/sec    0    707 KBytes
+[  5]  14.00-15.00  sec  11.4 MBytes  95.3 Mbits/sec  143    553 KBytes
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec   147 MBytes  82.3 Mbits/sec  509            sender
+[  5]   0.00-15.06  sec   145 MBytes  80.8 Mbits/sec                  receiver
+
+iperf Done.
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10171]
+└─[$] iperf3 -p 5240 -c iperf3.moji.fr -t 15                                                                    [13:52:21]
+Connecting to host iperf3.moji.fr, port 5240
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 34950 connected to 2a06:c484:6::3:1 port 5240
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  12.2 MBytes   103 Mbits/sec    0   1.38 MBytes
+[  5]   1.00-2.00   sec  11.2 MBytes  94.3 Mbits/sec    0   1.38 MBytes
+[  5]   2.00-3.00   sec  10.8 MBytes  90.2 Mbits/sec  444    512 KBytes
+[  5]   3.00-4.00   sec  9.62 MBytes  80.7 Mbits/sec    0    550 KBytes
+[  5]   4.00-5.00   sec  9.62 MBytes  80.7 Mbits/sec    0    574 KBytes
+[  5]   5.00-6.00   sec  11.0 MBytes  92.3 Mbits/sec    0    586 KBytes
+[  5]   6.00-7.00   sec  9.50 MBytes  79.7 Mbits/sec    0    593 KBytes
+[  5]   7.00-8.00   sec  11.0 MBytes  92.3 Mbits/sec   60    419 KBytes
+[  5]   8.00-9.00   sec  9.62 MBytes  80.7 Mbits/sec    0    485 KBytes
+[  5]   9.00-10.00  sec  10.9 MBytes  91.2 Mbits/sec    0    532 KBytes
+[  5]  10.00-11.00  sec  10.9 MBytes  91.2 Mbits/sec    0    564 KBytes
+[  5]  11.00-12.00  sec  9.88 MBytes  82.8 Mbits/sec   43    425 KBytes
+[  5]  12.00-13.00  sec  9.62 MBytes  80.7 Mbits/sec    0    456 KBytes
+[  5]  13.00-14.00  sec  9.62 MBytes  80.7 Mbits/sec    0    473 KBytes
+[  5]  14.00-15.00  sec  9.50 MBytes  79.7 Mbits/sec    0    481 KBytes
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec   155 MBytes  86.7 Mbits/sec  547            sender
+[  5]   0.00-15.09  sec   152 MBytes  84.4 Mbits/sec                  receiver
+
+iperf Done.
+
+
+REVERSE
+
+─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10173]
+└─[$] iperf3 -p 9240 -c speedtest.milkywan.fr -t 15 -R                                                          [13:54:48]
+Connecting to host speedtest.milkywan.fr, port 9240
+Reverse mode, remote host speedtest.milkywan.fr is sending
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 45462 connected to 2a0b:cbc0:42:1::1 port 9240
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  4.75 MBytes  39.8 Mbits/sec
+[  5]   1.00-2.00   sec  13.8 MBytes   115 Mbits/sec
+[  5]   2.00-3.00   sec  10.9 MBytes  91.2 Mbits/sec
+[  5]   3.00-4.00   sec  11.2 MBytes  94.4 Mbits/sec
+[  5]   4.00-5.00   sec  11.1 MBytes  93.3 Mbits/sec
+[  5]   5.00-6.00   sec  10.0 MBytes  83.9 Mbits/sec
+[  5]   6.00-7.00   sec  11.5 MBytes  96.5 Mbits/sec
+[  5]   7.00-8.00   sec  11.0 MBytes  92.3 Mbits/sec
+[  5]   8.00-9.00   sec  10.5 MBytes  88.1 Mbits/sec
+[  5]   9.00-10.00  sec  11.5 MBytes  96.5 Mbits/sec
+[  5]  10.00-11.00  sec  11.0 MBytes  92.3 Mbits/sec
+[  5]  11.00-12.00  sec  10.6 MBytes  89.1 Mbits/sec
+[  5]  12.00-13.00  sec  12.0 MBytes   101 Mbits/sec
+[  5]  13.00-14.00  sec  10.9 MBytes  91.2 Mbits/sec
+[  5]  14.00-15.00  sec  8.50 MBytes  71.3 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.05  sec   168 MBytes  93.8 Mbits/sec  10423            sender
+[  5]   0.00-15.00  sec   159 MBytes  89.1 Mbits/sec                  receiver
+
+iperf Done.
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10174]
+└─[$] iperf3 -p 5240 -c iperf3.moji.fr -t 15 -R                                                                 [13:55:18]
+Connecting to host iperf3.moji.fr, port 5240
+Reverse mode, remote host iperf3.moji.fr is sending
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 35104 connected to 2a06:c484:6::3:1 port 5240
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  8.38 MBytes  70.2 Mbits/sec
+[  5]   1.00-2.00   sec  9.12 MBytes  76.5 Mbits/sec
+[  5]   2.00-3.00   sec  10.2 MBytes  86.0 Mbits/sec
+[  5]   3.00-4.00   sec  10.5 MBytes  88.1 Mbits/sec
+[  5]   4.00-5.00   sec  10.6 MBytes  89.1 Mbits/sec
+[  5]   5.00-6.00   sec  9.88 MBytes  82.8 Mbits/sec
+[  5]   6.00-7.00   sec  10.0 MBytes  83.9 Mbits/sec
+[  5]   7.00-8.00   sec  10.6 MBytes  89.1 Mbits/sec
+[  5]   8.00-9.00   sec  10.4 MBytes  87.0 Mbits/sec
+[  5]   9.00-10.00  sec  10.5 MBytes  88.1 Mbits/sec
+[  5]  10.00-11.00  sec  9.12 MBytes  76.5 Mbits/sec
+[  5]  11.00-12.00  sec  10.1 MBytes  84.9 Mbits/sec
+[  5]  12.00-13.00  sec  8.38 MBytes  70.2 Mbits/sec
+[  5]  13.00-14.00  sec  5.88 MBytes  49.3 Mbits/sec
+[  5]  14.00-15.00  sec  6.62 MBytes  55.6 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.04  sec   144 MBytes  80.2 Mbits/sec  803            sender
+[  5]   0.00-15.00  sec   140 MBytes  78.5 Mbits/sec                  receiver
+
+iperf Done.
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10175]
+└─[$] iperf3 -p 10415 -c nl.iperf.014.fr -t 15 -R                                                               [13:55:56]
+Connecting to host nl.iperf.014.fr, port 10415
+Reverse mode, remote host nl.iperf.014.fr is sending
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 59924 connected to 2a04:ecc0:8:a8:4567:7f5b:0:1 port 10415
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  7.50 MBytes  62.8 Mbits/sec
+[  5]   1.00-2.00   sec  8.50 MBytes  71.3 Mbits/sec
+[  5]   2.00-3.00   sec  10.0 MBytes  83.9 Mbits/sec
+[  5]   3.00-4.00   sec  10.4 MBytes  87.0 Mbits/sec
+[  5]   4.00-5.00   sec  6.50 MBytes  54.5 Mbits/sec
+[  5]   5.00-6.00   sec  7.38 MBytes  61.9 Mbits/sec
+[  5]   6.00-7.00   sec  6.88 MBytes  57.7 Mbits/sec
+[  5]   7.00-8.00   sec  10.9 MBytes  91.2 Mbits/sec
+[  5]   8.00-9.00   sec  10.2 MBytes  86.0 Mbits/sec
+[  5]   9.00-10.00  sec  11.0 MBytes  92.3 Mbits/sec
+[  5]  10.00-11.00  sec  9.12 MBytes  76.5 Mbits/sec
+[  5]  11.00-12.00  sec  9.25 MBytes  77.6 Mbits/sec
+[  5]  12.00-13.00  sec  9.50 MBytes  79.7 Mbits/sec
+[  5]  13.00-14.00  sec  10.5 MBytes  88.1 Mbits/sec
+[  5]  14.00-15.00  sec  9.50 MBytes  79.7 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.05  sec   140 MBytes  78.0 Mbits/sec  389            sender
+[  5]   0.00-15.00  sec   137 MBytes  76.7 Mbits/sec                  receiver
+
+iperf Done.
+
+UDP 10 Mb
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10176]
+└─[$] iperf3 -p 10415 -c nl.iperf.014.fr -t 15 -u -b 10M                                                        [13:56:30]
+Connecting to host nl.iperf.014.fr, port 10415
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 57180 connected to 2a04:ecc0:8:a8:4567:7f5b:0:1 port 10415
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  1.19 MBytes  10.0 Mbits/sec  915
+[  5]   1.00-2.00   sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]   2.00-3.00   sec  1.19 MBytes  9.99 Mbits/sec  913
+[  5]   3.00-4.00   sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]   4.00-5.00   sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]   5.00-6.00   sec  1.19 MBytes  9.99 Mbits/sec  914
+[  5]   6.00-7.00   sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]   7.00-8.00   sec  1.19 MBytes  10.0 Mbits/sec  913
+[  5]   8.00-9.00   sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]   9.00-10.00  sec  1.19 MBytes  9.99 Mbits/sec  914
+[  5]  10.00-11.00  sec  1.19 MBytes  10.0 Mbits/sec  913
+[  5]  11.00-12.00  sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]  12.00-13.00  sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]  13.00-14.00  sec  1.19 MBytes  9.99 Mbits/sec  914
+[  5]  14.00-15.00  sec  1.19 MBytes  10.0 Mbits/sec  913
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-15.00  sec  17.9 MBytes  10.0 Mbits/sec  0.000 ms  0/13707 (0%)  sender
+[  5]   0.00-19.16  sec  16.5 MBytes  7.21 Mbits/sec  0.098 ms  0/12624 (0%)  receiver
+
+iperf Done.
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10181]
+└─[$] iperf3 -p 9240 -c speedtest.milkywan.fr -t 15 -u -b 10M                                                   [13:59:34]
+Connecting to host speedtest.milkywan.fr, port 9240
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 47063 connected to 2a0b:cbc0:42:1::1 port 9240
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  1.19 MBytes  10.0 Mbits/sec  915
+[  5]   1.00-2.00   sec  1.19 MBytes  10.0 Mbits/sec  913
+[  5]   2.00-3.00   sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]   3.00-4.00   sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]   4.00-5.00   sec  1.19 MBytes  9.99 Mbits/sec  914
+[  5]   5.00-6.00   sec  1.19 MBytes  10.0 Mbits/sec  913
+[  5]   6.00-7.00   sec  1.19 MBytes  10.0 Mbits/sec  915
+[  5]   7.00-8.00   sec  1.19 MBytes  10.0 Mbits/sec  913
+[  5]   8.00-9.00   sec  1.19 MBytes  9.99 Mbits/sec  914
+[  5]   9.00-10.00  sec  1.19 MBytes  10.0 Mbits/sec  913
+[  5]  10.00-11.00  sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]  11.00-12.00  sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]  12.00-13.00  sec  1.19 MBytes  10.0 Mbits/sec  914
+[  5]  13.00-14.00  sec  1.19 MBytes  9.99 Mbits/sec  913
+[  5]  14.00-15.00  sec  1.19 MBytes  10.0 Mbits/sec  914
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-15.00  sec  17.9 MBytes  10.0 Mbits/sec  0.000 ms  0/13707 (0%)  sender
+[  5]   0.00-15.08  sec  17.9 MBytes  9.95 Mbits/sec  0.216 ms  0/13707 (0%)  receiver
+
+iperf Done.
+
+2. oKNO 256K
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10192]
+└─[$] iperf3 -p 5200 -c iperf3.moji.fr -t 15 -w 256K                                                            [14:05:23]
+Connecting to host iperf3.moji.fr, port 5200
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 53052 connected to 2a06:c484:6::3:1 port 5200
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  4.00 MBytes  33.5 Mbits/sec    0    418 KBytes
+[  5]   1.00-2.00   sec  4.62 MBytes  38.8 Mbits/sec    0    418 KBytes
+[  5]   2.00-3.00   sec  4.62 MBytes  38.8 Mbits/sec    0    418 KBytes
+[  5]   3.00-4.00   sec  4.25 MBytes  35.7 Mbits/sec    0    418 KBytes
+[  5]   4.00-5.00   sec  4.50 MBytes  37.7 Mbits/sec    0    418 KBytes
+[  5]   5.00-6.00   sec  4.38 MBytes  36.7 Mbits/sec    0    418 KBytes
+[  5]   6.00-7.00   sec  4.75 MBytes  39.8 Mbits/sec    0    418 KBytes
+[  5]   7.00-8.00   sec  4.25 MBytes  35.7 Mbits/sec    0    418 KBytes
+[  5]   8.00-9.00   sec  4.75 MBytes  39.8 Mbits/sec    0    418 KBytes
+[  5]   9.00-10.00  sec  4.25 MBytes  35.7 Mbits/sec    0    418 KBytes
+[  5]  10.00-11.00  sec  4.75 MBytes  39.8 Mbits/sec    0    418 KBytes
+[  5]  11.00-12.00  sec  4.62 MBytes  38.8 Mbits/sec    0    418 KBytes
+[  5]  12.00-13.00  sec  4.62 MBytes  38.8 Mbits/sec    0    418 KBytes
+[  5]  13.00-14.00  sec  4.62 MBytes  38.8 Mbits/sec    0    418 KBytes
+[  5]  14.00-15.00  sec  4.50 MBytes  37.7 Mbits/sec    0    418 KBytes
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  67.5 MBytes  37.7 Mbits/sec    0            sender
+[  5]   0.00-15.07  sec  67.4 MBytes  37.5 Mbits/sec                  receiver
+
+iperf Done.
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10193]
+└─[$] iperf3 -p 9240 -c speedtest.milkywan.fr -t 15 -w 256K                                                     [14:05:43]
+Connecting to host speedtest.milkywan.fr, port 9240
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 56258 connected to 2a0b:cbc0:42:1::1 port 9240
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  4.50 MBytes  37.7 Mbits/sec    0    512 KBytes
+[  5]   1.00-2.00   sec  5.25 MBytes  44.0 Mbits/sec    0    512 KBytes
+[  5]   2.00-3.00   sec  5.62 MBytes  47.2 Mbits/sec    0    512 KBytes
+[  5]   3.00-4.00   sec  5.50 MBytes  46.1 Mbits/sec    0    521 KBytes
+[  5]   4.00-5.00   sec  5.12 MBytes  43.0 Mbits/sec    1    365 KBytes
+[  5]   5.00-6.00   sec  5.25 MBytes  44.1 Mbits/sec    0    365 KBytes
+[  5]   6.00-7.00   sec  5.25 MBytes  44.0 Mbits/sec    0    365 KBytes
+[  5]   7.00-8.00   sec  5.50 MBytes  46.1 Mbits/sec    0    365 KBytes
+[  5]   8.00-9.00   sec  5.38 MBytes  45.1 Mbits/sec    0    365 KBytes
+[  5]   9.00-10.00  sec  5.38 MBytes  45.1 Mbits/sec    0    365 KBytes
+[  5]  10.00-11.00  sec  5.38 MBytes  45.1 Mbits/sec    0    365 KBytes
+[  5]  11.00-12.00  sec  5.50 MBytes  46.2 Mbits/sec    0    365 KBytes
+[  5]  12.00-13.00  sec  5.38 MBytes  45.1 Mbits/sec    0    365 KBytes
+[  5]  13.00-14.00  sec  5.25 MBytes  44.0 Mbits/sec    0    365 KBytes
+[  5]  14.00-15.00  sec  5.50 MBytes  46.1 Mbits/sec    0    365 KBytes
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  79.8 MBytes  44.6 Mbits/sec    1            sender
+[  5]   0.00-15.04  sec  79.6 MBytes  44.4 Mbits/sec                  receiver
+
+iperf Done.
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10194]
+└─[$] iperf3 -p 10415 -c nl.iperf.014.fr -t 15 -w 256K                                                          [14:09:02]
+Connecting to host nl.iperf.014.fr, port 10415
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 39876 connected to 2a04:ecc0:8:a8:4567:7f5b:0:1 port 10415
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  3.38 MBytes  28.3 Mbits/sec    0    418 KBytes
+[  5]   1.00-2.00   sec  3.75 MBytes  31.5 Mbits/sec    0    418 KBytes
+[  5]   2.00-3.00   sec  4.25 MBytes  35.7 Mbits/sec    0    418 KBytes
+[  5]   3.00-4.00   sec  4.12 MBytes  34.6 Mbits/sec    0    418 KBytes
+[  5]   4.00-5.00   sec  4.00 MBytes  33.6 Mbits/sec    0    418 KBytes
+[  5]   5.00-6.00   sec  4.25 MBytes  35.7 Mbits/sec    0    418 KBytes
+[  5]   6.00-7.00   sec  3.75 MBytes  31.5 Mbits/sec    0    418 KBytes
+[  5]   7.00-8.00   sec  4.00 MBytes  33.6 Mbits/sec    0    418 KBytes
+[  5]   8.00-9.00   sec  4.25 MBytes  35.7 Mbits/sec    0    418 KBytes
+[  5]   9.00-10.00  sec  4.00 MBytes  33.6 Mbits/sec    0    418 KBytes
+[  5]  10.00-11.00  sec  4.00 MBytes  33.6 Mbits/sec    0    418 KBytes
+[  5]  11.00-12.00  sec  3.88 MBytes  32.5 Mbits/sec    0    418 KBytes
+[  5]  12.00-13.00  sec  4.12 MBytes  34.6 Mbits/sec    0    418 KBytes
+[  5]  13.00-14.00  sec  4.00 MBytes  33.6 Mbits/sec    0    418 KBytes
+[  5]  14.00-15.00  sec  4.00 MBytes  33.6 Mbits/sec    0    418 KBytes
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  59.8 MBytes  33.4 Mbits/sec    0            sender
+[  5]   0.00-15.05  sec  59.8 MBytes  33.3 Mbits/sec                  receiver
+
+iperf Done.
+
+
+
+liczba strumieni 3
+
+erf Done.
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10196]
+└─[$] iperf3 -p 10415 -c nl.iperf.014.fr -t 15 -P 3                                                             [14:10:35]
+Connecting to host nl.iperf.014.fr, port 10415
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 37278 connected to 2a04:ecc0:8:a8:4567:7f5b:0:1 port 10415
+[  7] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 37288 connected to 2a04:ecc0:8:a8:4567:7f5b:0:1 port 10415
+[  9] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 37294 connected to 2a04:ecc0:8:a8:4567:7f5b:0:1 port 10415
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  5.88 MBytes  49.2 Mbits/sec    0   1.64 MBytes
+[  7]   0.00-1.00   sec  3.75 MBytes  31.4 Mbits/sec    0    454 KBytes
+[  9]   0.00-1.00   sec  1.88 MBytes  15.7 Mbits/sec    0    176 KBytes
+[SUM]   0.00-1.00   sec  11.5 MBytes  96.4 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   1.00-2.00   sec  2.75 MBytes  23.1 Mbits/sec   26    247 KBytes
+[  7]   1.00-2.00   sec  5.12 MBytes  43.0 Mbits/sec   41    394 KBytes
+[  9]   1.00-2.00   sec  3.50 MBytes  29.4 Mbits/sec   41    198 KBytes
+[SUM]   1.00-2.00   sec  11.4 MBytes  95.4 Mbits/sec  108
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   2.00-3.00   sec  4.50 MBytes  37.8 Mbits/sec   18    315 KBytes
+[  7]   2.00-3.00   sec  3.62 MBytes  30.4 Mbits/sec   65    309 KBytes
+[  9]   2.00-3.00   sec  3.25 MBytes  27.3 Mbits/sec   42    159 KBytes
+[SUM]   2.00-3.00   sec  11.4 MBytes  95.4 Mbits/sec  125
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   3.00-4.00   sec  2.88 MBytes  24.1 Mbits/sec    0    322 KBytes
+[  7]   3.00-4.00   sec  2.75 MBytes  23.1 Mbits/sec    0    335 KBytes
+[  9]   3.00-4.00   sec  3.25 MBytes  27.3 Mbits/sec    0    176 KBytes
+[SUM]   3.00-4.00   sec  8.88 MBytes  74.5 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   4.00-5.00   sec  2.75 MBytes  23.1 Mbits/sec    0    322 KBytes
+[  7]   4.00-5.00   sec  3.50 MBytes  29.4 Mbits/sec    0    339 KBytes
+[  9]   4.00-5.00   sec  3.12 MBytes  26.2 Mbits/sec    0    186 KBytes
+[SUM]   4.00-5.00   sec  9.38 MBytes  78.6 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   5.00-6.00   sec  4.25 MBytes  35.7 Mbits/sec    0    322 KBytes
+[  7]   5.00-6.00   sec  2.75 MBytes  23.1 Mbits/sec    0    339 KBytes
+[  9]   5.00-6.00   sec  3.12 MBytes  26.2 Mbits/sec    0    194 KBytes
+[SUM]   5.00-6.00   sec  10.1 MBytes  84.9 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   6.00-7.00   sec  2.75 MBytes  23.1 Mbits/sec    0    361 KBytes
+[  7]   6.00-7.00   sec  3.62 MBytes  30.4 Mbits/sec    0    362 KBytes
+[  9]   6.00-7.00   sec  3.75 MBytes  31.5 Mbits/sec    0    207 KBytes
+[SUM]   6.00-7.00   sec  10.1 MBytes  84.9 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   7.00-8.00   sec  4.38 MBytes  36.7 Mbits/sec    0    361 KBytes
+[  7]   7.00-8.00   sec  3.62 MBytes  30.4 Mbits/sec    0    362 KBytes
+[  9]   7.00-8.00   sec  3.62 MBytes  30.4 Mbits/sec    0    219 KBytes
+[SUM]   7.00-8.00   sec  11.6 MBytes  97.5 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   8.00-9.00   sec  4.12 MBytes  34.6 Mbits/sec    0    361 KBytes
+[  7]   8.00-9.00   sec  3.50 MBytes  29.4 Mbits/sec    0    367 KBytes
+[  9]   8.00-9.00   sec  3.88 MBytes  32.5 Mbits/sec    0    231 KBytes
+[SUM]   8.00-9.00   sec  11.5 MBytes  96.5 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   9.00-10.00  sec  2.75 MBytes  23.1 Mbits/sec    2    252 KBytes
+[  7]   9.00-10.00  sec  3.62 MBytes  30.4 Mbits/sec   30    258 KBytes
+[  9]   9.00-10.00  sec  3.75 MBytes  31.5 Mbits/sec   24    118 KBytes
+[SUM]   9.00-10.00  sec  10.1 MBytes  84.9 Mbits/sec   56
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  10.00-11.00  sec  2.88 MBytes  24.1 Mbits/sec    0    261 KBytes
+[  7]  10.00-11.00  sec  3.12 MBytes  26.2 Mbits/sec    0    287 KBytes
+[  9]  10.00-11.00  sec  2.12 MBytes  17.8 Mbits/sec    0    135 KBytes
+[SUM]  10.00-11.00  sec  8.12 MBytes  68.2 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  11.00-12.00  sec  2.75 MBytes  23.1 Mbits/sec    0    289 KBytes
+[  7]  11.00-12.00  sec  2.00 MBytes  16.8 Mbits/sec    0    329 KBytes
+[  9]  11.00-12.00  sec  2.50 MBytes  21.0 Mbits/sec    0    144 KBytes
+[SUM]  11.00-12.00  sec  7.25 MBytes  60.8 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  12.00-13.00  sec  2.88 MBytes  24.1 Mbits/sec    0    297 KBytes
+[  7]  12.00-13.00  sec  3.50 MBytes  29.4 Mbits/sec    0    346 KBytes
+[  9]  12.00-13.00  sec  3.12 MBytes  26.2 Mbits/sec    0    158 KBytes
+[SUM]  12.00-13.00  sec  9.50 MBytes  79.7 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  13.00-14.00  sec  2.75 MBytes  23.1 Mbits/sec    0    305 KBytes
+[  7]  13.00-14.00  sec  2.75 MBytes  23.1 Mbits/sec    0    346 KBytes
+[  9]  13.00-14.00  sec  2.75 MBytes  23.1 Mbits/sec    0    170 KBytes
+[SUM]  13.00-14.00  sec  8.25 MBytes  69.2 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  14.00-15.00  sec  2.88 MBytes  24.1 Mbits/sec    0    306 KBytes
+[  7]  14.00-15.00  sec  2.25 MBytes  18.9 Mbits/sec    0    346 KBytes
+[  9]  14.00-15.00  sec  2.75 MBytes  23.0 Mbits/sec    0    182 KBytes
+[SUM]  14.00-15.00  sec  7.88 MBytes  66.0 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  51.1 MBytes  28.6 Mbits/sec   46            sender
+[  5]   0.00-15.09  sec  46.1 MBytes  25.6 Mbits/sec                  receiver
+[  7]   0.00-15.00  sec  49.5 MBytes  27.7 Mbits/sec  136            sender
+[  7]   0.00-15.09  sec  46.0 MBytes  25.6 Mbits/sec                  receiver
+[  9]   0.00-15.00  sec  46.4 MBytes  25.9 Mbits/sec  107            sender
+[  9]   0.00-15.09  sec  46.0 MBytes  25.6 Mbits/sec                  receiver
+[SUM]   0.00-15.00  sec   147 MBytes  82.2 Mbits/sec  289             sender
+[SUM]   0.00-15.09  sec   138 MBytes  76.8 Mbits/sec                  receiver
+
+iperf Done.
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10197]
+└─[$] iperf3 -p 9240 -c speedtest.milkywan.fr -t 15 -P 3                                                        [14:11:01]
+Connecting to host speedtest.milkywan.fr, port 9240
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 56880 connected to 2a0b:cbc0:42:1::1 port 9240
+[  7] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 56884 connected to 2a0b:cbc0:42:1::1 port 9240
+[  9] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 56886 connected to 2a0b:cbc0:42:1::1 port 9240
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  1.38 MBytes  11.5 Mbits/sec    0    135 KBytes
+[  7]   0.00-1.00   sec  5.38 MBytes  45.1 Mbits/sec    0    538 KBytes
+[  9]   0.00-1.00   sec  5.00 MBytes  41.9 Mbits/sec    0    516 KBytes
+[SUM]   0.00-1.00   sec  11.8 MBytes  98.5 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   1.00-2.00   sec  1.88 MBytes  15.7 Mbits/sec    0    216 KBytes
+[  7]   1.00-2.00   sec  4.62 MBytes  38.8 Mbits/sec    0    580 KBytes
+[  9]   1.00-2.00   sec  4.62 MBytes  38.8 Mbits/sec    0    554 KBytes
+[SUM]   1.00-2.00   sec  11.1 MBytes  93.3 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   2.00-3.00   sec  1.75 MBytes  14.7 Mbits/sec  136   85.5 KBytes
+[  7]   2.00-3.00   sec  4.25 MBytes  35.7 Mbits/sec  269    212 KBytes
+[  9]   2.00-3.00   sec  4.00 MBytes  33.6 Mbits/sec  292    206 KBytes
+[SUM]   2.00-3.00   sec  10.0 MBytes  83.9 Mbits/sec  697
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   3.00-4.00   sec  1.75 MBytes  14.7 Mbits/sec    0   96.2 KBytes
+[  7]   3.00-4.00   sec  4.75 MBytes  39.8 Mbits/sec    0    232 KBytes
+[  9]   3.00-4.00   sec  4.50 MBytes  37.8 Mbits/sec    0    224 KBytes
+[SUM]   3.00-4.00   sec  11.0 MBytes  92.3 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   4.00-5.00   sec  1.88 MBytes  15.7 Mbits/sec    0    110 KBytes
+[  7]   4.00-5.00   sec  4.75 MBytes  39.8 Mbits/sec    0    242 KBytes
+[  9]   4.00-5.00   sec  4.62 MBytes  38.8 Mbits/sec    0    234 KBytes
+[SUM]   4.00-5.00   sec  11.2 MBytes  94.4 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   5.00-6.00   sec  2.12 MBytes  17.8 Mbits/sec    0    124 KBytes
+[  7]   5.00-6.00   sec  4.75 MBytes  39.8 Mbits/sec    0    248 KBytes
+[  9]   5.00-6.00   sec  3.88 MBytes  32.5 Mbits/sec    0    240 KBytes
+[SUM]   5.00-6.00   sec  10.8 MBytes  90.2 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   6.00-7.00   sec  2.25 MBytes  18.9 Mbits/sec   20    104 KBytes
+[  7]   6.00-7.00   sec  4.00 MBytes  33.6 Mbits/sec   26    202 KBytes
+[  9]   6.00-7.00   sec  4.00 MBytes  33.6 Mbits/sec   25    196 KBytes
+[SUM]   6.00-7.00   sec  10.2 MBytes  86.0 Mbits/sec   71
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   7.00-8.00   sec  1.88 MBytes  15.7 Mbits/sec    0    119 KBytes
+[  7]   7.00-8.00   sec  4.00 MBytes  33.6 Mbits/sec    0    230 KBytes
+[  9]   7.00-8.00   sec  4.50 MBytes  37.8 Mbits/sec    0    222 KBytes
+[SUM]   7.00-8.00   sec  10.4 MBytes  87.0 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   8.00-9.00   sec  2.38 MBytes  19.9 Mbits/sec    0    126 KBytes
+[  7]   8.00-9.00   sec  4.75 MBytes  39.8 Mbits/sec    0    244 KBytes
+[  9]   8.00-9.00   sec  3.75 MBytes  31.5 Mbits/sec    0    236 KBytes
+[SUM]   8.00-9.00   sec  10.9 MBytes  91.2 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   9.00-10.00  sec  2.25 MBytes  18.9 Mbits/sec   11    103 KBytes
+[  7]   9.00-10.00  sec  4.25 MBytes  35.6 Mbits/sec   23    187 KBytes
+[  9]   9.00-10.00  sec  4.25 MBytes  35.6 Mbits/sec   22    180 KBytes
+[SUM]   9.00-10.00  sec  10.8 MBytes  90.2 Mbits/sec   56
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  10.00-11.00  sec  2.12 MBytes  17.8 Mbits/sec    0    120 KBytes
+[  7]  10.00-11.00  sec  4.00 MBytes  33.6 Mbits/sec    0    202 KBytes
+[  9]  10.00-11.00  sec  3.75 MBytes  31.5 Mbits/sec    0    196 KBytes
+[SUM]  10.00-11.00  sec  9.88 MBytes  82.9 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  11.00-12.00  sec  2.00 MBytes  16.8 Mbits/sec    1   93.5 KBytes
+[  7]  11.00-12.00  sec  4.00 MBytes  33.6 Mbits/sec    0    210 KBytes
+[  9]  11.00-12.00  sec  3.62 MBytes  30.4 Mbits/sec    0    203 KBytes
+[SUM]  11.00-12.00  sec  9.62 MBytes  80.7 Mbits/sec    1
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  12.00-13.00  sec  1.75 MBytes  14.7 Mbits/sec    0    104 KBytes
+[  7]  12.00-13.00  sec  4.12 MBytes  34.6 Mbits/sec    0    223 KBytes
+[  9]  12.00-13.00  sec  4.00 MBytes  33.6 Mbits/sec    0    216 KBytes
+[SUM]  12.00-13.00  sec  9.88 MBytes  82.8 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  13.00-14.00  sec  2.12 MBytes  17.8 Mbits/sec    0    118 KBytes
+[  7]  13.00-14.00  sec  4.75 MBytes  39.8 Mbits/sec    0    238 KBytes
+[  9]  13.00-14.00  sec  4.50 MBytes  37.7 Mbits/sec    0    230 KBytes
+[SUM]  13.00-14.00  sec  11.4 MBytes  95.4 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  14.00-15.00  sec  2.12 MBytes  17.8 Mbits/sec    6   93.5 KBytes
+[  7]  14.00-15.00  sec  4.75 MBytes  39.8 Mbits/sec   13    180 KBytes
+[  9]  14.00-15.00  sec  4.50 MBytes  37.7 Mbits/sec    0    244 KBytes
+[SUM]  14.00-15.00  sec  11.4 MBytes  95.3 Mbits/sec   19
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  29.6 MBytes  16.6 Mbits/sec  174            sender
+[  5]   0.00-15.05  sec  29.3 MBytes  16.3 Mbits/sec                  receiver
+[  7]   0.00-15.00  sec  67.1 MBytes  37.5 Mbits/sec  331            sender
+[  7]   0.00-15.05  sec  65.6 MBytes  36.5 Mbits/sec                  receiver
+[  9]   0.00-15.00  sec  63.5 MBytes  35.5 Mbits/sec  339            sender
+[  9]   0.00-15.05  sec  62.3 MBytes  34.7 Mbits/sec                  receiver
+[SUM]   0.00-15.00  sec   160 MBytes  89.6 Mbits/sec  844             sender
+[SUM]   0.00-15.05  sec   157 MBytes  87.6 Mbits/sec                  receiver
+
+iperf Done.
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10199]
+└─[$] iperf3 -p 5240 -c iperf3.moji.fr -t 15 -P 3                                                               [14:12:04]
+Connecting to host iperf3.moji.fr, port 5240
+[  5] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 35582 connected to 2a06:c484:6::3:1 port 5240
+[  7] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 35590 connected to 2a06:c484:6::3:1 port 5240
+[  9] local 2001:6d8:10:8100:3c95:688:94bf:fa3d port 35596 connected to 2a06:c484:6::3:1 port 5240
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  4.75 MBytes  39.8 Mbits/sec  177    250 KBytes
+[  7]   0.00-1.00   sec  3.00 MBytes  25.1 Mbits/sec   83    100 KBytes
+[  9]   0.00-1.00   sec  4.50 MBytes  37.7 Mbits/sec  208    172 KBytes
+[SUM]   0.00-1.00   sec  12.2 MBytes   103 Mbits/sec  468
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   1.00-2.00   sec  5.75 MBytes  48.3 Mbits/sec    0    277 KBytes
+[  7]   1.00-2.00   sec  2.25 MBytes  18.9 Mbits/sec    0    114 KBytes
+[  9]   1.00-2.00   sec  4.00 MBytes  33.6 Mbits/sec    0    194 KBytes
+[SUM]   1.00-2.00   sec  12.0 MBytes   101 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   2.00-3.00   sec  5.12 MBytes  43.0 Mbits/sec   54    210 KBytes
+[  7]   2.00-3.00   sec  2.12 MBytes  17.8 Mbits/sec    9   93.5 KBytes
+[  9]   2.00-3.00   sec  3.38 MBytes  28.3 Mbits/sec   11    104 KBytes
+[SUM]   2.00-3.00   sec  10.6 MBytes  89.1 Mbits/sec   74
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   3.00-4.00   sec  4.50 MBytes  37.7 Mbits/sec    0    230 KBytes
+[  7]   3.00-4.00   sec  2.00 MBytes  16.8 Mbits/sec    0    111 KBytes
+[  9]   3.00-4.00   sec  2.38 MBytes  19.9 Mbits/sec    0    116 KBytes
+[SUM]   3.00-4.00   sec  8.88 MBytes  74.4 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   4.00-5.00   sec  4.62 MBytes  38.8 Mbits/sec    0    239 KBytes
+[  7]   4.00-5.00   sec  2.38 MBytes  19.9 Mbits/sec    0    119 KBytes
+[  9]   4.00-5.00   sec  2.25 MBytes  18.9 Mbits/sec    0    130 KBytes
+[SUM]   4.00-5.00   sec  9.25 MBytes  77.6 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   5.00-6.00   sec  4.62 MBytes  38.8 Mbits/sec    0    248 KBytes
+[  7]   5.00-6.00   sec  2.62 MBytes  22.0 Mbits/sec    0    132 KBytes
+[  9]   5.00-6.00   sec  2.88 MBytes  24.1 Mbits/sec    0    144 KBytes
+[SUM]   5.00-6.00   sec  10.1 MBytes  84.9 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   6.00-7.00   sec  5.50 MBytes  46.1 Mbits/sec    0    263 KBytes
+[  7]   6.00-7.00   sec  2.75 MBytes  23.1 Mbits/sec    0    147 KBytes
+[  9]   6.00-7.00   sec  2.88 MBytes  24.1 Mbits/sec    0    160 KBytes
+[SUM]   6.00-7.00   sec  11.1 MBytes  93.3 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   7.00-8.00   sec  4.75 MBytes  39.8 Mbits/sec    0    277 KBytes
+[  7]   7.00-8.00   sec  2.88 MBytes  24.1 Mbits/sec    0    160 KBytes
+[  9]   7.00-8.00   sec  3.38 MBytes  28.3 Mbits/sec    0    174 KBytes
+[SUM]   7.00-8.00   sec  11.0 MBytes  92.3 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   8.00-9.00   sec  4.62 MBytes  38.8 Mbits/sec   36    147 KBytes
+[  7]   8.00-9.00   sec  2.88 MBytes  24.1 Mbits/sec   23    128 KBytes
+[  9]   8.00-9.00   sec  2.75 MBytes  23.1 Mbits/sec   23    138 KBytes
+[SUM]   8.00-9.00   sec  10.2 MBytes  86.0 Mbits/sec   82
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   9.00-10.00  sec  3.25 MBytes  27.3 Mbits/sec    0    162 KBytes
+[  7]   9.00-10.00  sec  2.88 MBytes  24.1 Mbits/sec    0    151 KBytes
+[  9]   9.00-10.00  sec  3.50 MBytes  29.4 Mbits/sec    0    163 KBytes
+[SUM]   9.00-10.00  sec  9.62 MBytes  80.7 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  10.00-11.00  sec  3.38 MBytes  28.3 Mbits/sec    0    172 KBytes
+[  7]  10.00-11.00  sec  3.25 MBytes  27.3 Mbits/sec    0    162 KBytes
+[  9]  10.00-11.00  sec  2.88 MBytes  24.1 Mbits/sec    0    176 KBytes
+[SUM]  10.00-11.00  sec  9.50 MBytes  79.7 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  11.00-12.00  sec  3.38 MBytes  28.3 Mbits/sec    0    187 KBytes
+[  7]  11.00-12.00  sec  3.12 MBytes  26.2 Mbits/sec    0    167 KBytes
+[  9]  11.00-12.00  sec  4.00 MBytes  33.5 Mbits/sec    0    182 KBytes
+[SUM]  11.00-12.00  sec  10.5 MBytes  88.1 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  12.00-13.00  sec  4.00 MBytes  33.6 Mbits/sec    0    202 KBytes
+[  7]  12.00-13.00  sec  3.50 MBytes  29.4 Mbits/sec    0    179 KBytes
+[  9]  12.00-13.00  sec  3.38 MBytes  28.3 Mbits/sec    0    190 KBytes
+[SUM]  12.00-13.00  sec  10.9 MBytes  91.2 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  13.00-14.00  sec  4.00 MBytes  33.6 Mbits/sec    0    215 KBytes
+[  7]  13.00-14.00  sec  3.00 MBytes  25.2 Mbits/sec    0    192 KBytes
+[  9]  13.00-14.00  sec  3.38 MBytes  28.3 Mbits/sec    0    203 KBytes
+[SUM]  13.00-14.00  sec  10.4 MBytes  87.0 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  14.00-15.00  sec  3.62 MBytes  30.4 Mbits/sec    0    227 KBytes
+[  7]  14.00-15.00  sec  3.62 MBytes  30.4 Mbits/sec    0    204 KBytes
+[  9]  14.00-15.00  sec  4.00 MBytes  33.5 Mbits/sec    0    215 KBytes
+[SUM]  14.00-15.00  sec  11.2 MBytes  94.3 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  65.9 MBytes  36.8 Mbits/sec  267            sender
+[  5]   0.00-15.05  sec  64.8 MBytes  36.1 Mbits/sec                  receiver
+[  7]   0.00-15.00  sec  42.2 MBytes  23.6 Mbits/sec  115            sender
+[  7]   0.00-15.05  sec  41.8 MBytes  23.3 Mbits/sec                  receiver
+[  9]   0.00-15.00  sec  49.5 MBytes  27.7 Mbits/sec  242            sender
+[  9]   0.00-15.05  sec  48.2 MBytes  26.9 Mbits/sec                  receiver
+[SUM]   0.00-15.00  sec   158 MBytes  88.1 Mbits/sec  624             sender
+[SUM]   0.00-15.05  sec   155 MBytes  86.3 Mbits/sec                  receiver
+
+iperf Done.
+
+
+dig google.com
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10201]
+└─[$] dig @8.8.8.8 www.google.com +stats                                                                        [14:16:32]
+
+; <<>> DiG 9.18.39 <<>> @8.8.8.8 www.google.com +stats
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51311
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;www.google.com.			IN	A
+
+;; ANSWER SECTION:
+www.google.com.		282	IN	A	216.58.215.68
+
+;; Query time: 37 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Tue Oct 28 14:17:19 CET 2025
+;; MSG SIZE  rcvd: 59
+
+
+po czasie 15 sekund
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10202]
+└─[$] dig @8.8.8.8 www.google.com +stats                                                                        [14:17:19]
+
+; <<>> DiG 9.18.39 <<>> @8.8.8.8 www.google.com +stats
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 56514
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;www.google.com.			IN	A
+
+;; ANSWER SECTION:
+www.google.com.		237	IN	A	216.58.215.68
+
+;; Query time: 35 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Tue Oct 28 14:18:04 CET 2025
+;; MSG SIZE  rcvd: 59
+
+
+Pierwsze zapytanie (dig @8.8.8.8 www.google.com) wysłało pytanie do serwera DNS (8.8.8.8)
+ i otrzymało świeży wpis z TTL = 282 sekund.
+
+Gdy wykonałeś drugie zapytanie po 15 sekundach, serwer DNS nie pobrał ponownie danych
+ z serwera Google, tylko zwrócił wynik z cache’a, w którym pozostało już tylko 237 sekund
+  do wygaśnięcia wpisu.
+
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10202]
+└─[$] dig example.com A +noall +answer                                                                          [14:18:04]
+dig example.com AAAA +noall +answer
+dig example.com MX +noall +answer
+dig example.com NS +noall +answer
+example.com.		300	IN	A	23.220.75.245
+example.com.		300	IN	A	23.215.0.138
+example.com.		300	IN	A	23.192.228.80
+example.com.		300	IN	A	23.215.0.136
+example.com.		300	IN	A	23.192.228.84
+example.com.		300	IN	A	23.220.75.232
+example.com.		300	IN	AAAA	2600:1406:bc00:53::b81e:94c8
+example.com.		300	IN	AAAA	2600:1406:5e00:6::17ce:bc12
+example.com.		300	IN	AAAA	2600:1408:ec00:36::1736:7f24
+example.com.		300	IN	AAAA	2600:1408:ec00:36::1736:7f31
+example.com.		300	IN	AAAA	2600:1406:5e00:6::17ce:bc1b
+example.com.		300	IN	AAAA	2600:1406:bc00:53::b81e:94ce
+example.com.		86400	IN	MX	0 .
+example.com.		82199	IN	NS	a.iana-servers.net.
+example.com.		82199	IN	NS	b.iana-servers.net.
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10203]
+└─[$] dig example.com A +noall +answer                                                                          [14:20:41]
+dig example.com AAAA +noall +answer
+dig example.com MX +noall +answer
+dig example.com NS +noall +answer
+example.com.		292	IN	A	23.192.228.80
+example.com.		292	IN	A	23.215.0.138
+example.com.		292	IN	A	23.192.228.84
+example.com.		292	IN	A	23.220.75.245
+example.com.		292	IN	A	23.215.0.136
+example.com.		292	IN	A	23.220.75.232
+example.com.		293	IN	AAAA	2600:1406:bc00:53::b81e:94c8
+example.com.		293	IN	AAAA	2600:1406:5e00:6::17ce:bc12
+example.com.		293	IN	AAAA	2600:1406:bc00:53::b81e:94ce
+example.com.		293	IN	AAAA	2600:1408:ec00:36::1736:7f31
+example.com.		293	IN	AAAA	2600:1408:ec00:36::1736:7f24
+example.com.		293	IN	AAAA	2600:1406:5e00:6::17ce:bc1b
+example.com.		7193	IN	MX	0 .
+example.com.		467	IN	NS	a.iana-servers.net.
+example.com.		467	IN	NS	b.iana-servers.net.
+
+to samo z cache
+
+
+curl google.com
+
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10203]
+└─[$] curl -o /dev/null -s -w "time_total: %{time_total}\n" https://www.google.com                              [14:20:48]
+
+time_total: 0.487163
+┌─[umarly-poeta@fedora] - [~/projects/sieci_komputerowe/02] - [10204]
+└─[$] curl -o /dev/null -s -w "time_total: %{time_total}\n" https://www.google.com                              [14:21:19]
+
+time_total: 0.148638
+
+też szybciej bo cache
+
+
+

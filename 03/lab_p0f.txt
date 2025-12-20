@@ -1,0 +1,8 @@
+--- p0f 3.09b by Michal Zalewski <lcamtuf@coredump.cx> ---
+
+[+] Closed 1 file descriptor.
+[+] Loaded 322 signatures from '/etc/p0f/p0f.fp'.
+[+] Intercepting traffic on default interface 'tailscale0'.
+[+] Default packet filtering configured.
+[+] Entered main event loop.
+
